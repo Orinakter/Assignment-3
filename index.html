@@ -67,10 +67,10 @@
             </div>
             <div class="navbar-end">
                 
-                <a class="text-md overflow-hidden lg:text-lg bg-white" href=""><i class="fa-solid fa-magnifying-glass bg-white-50  ml-5 pl-5"></i></a>
-                <a class="text-md overflow-hidden lg:text-lg bg-white"" href=""><i class="fa-solid fa-cart-shopping bg-slate-50"></i></a>
+                <a class="hidden md:block lg:text-lg bg-white" href=""><i class="fa-solid fa-magnifying-glass bg-white-50  ml-5 pl-5"></i></a>
+                <a class="hidden md:block lg:text-lg bg-white"" href=""><i class="fa-solid fa-cart-shopping bg-slate-50"></i></a>
                
-              <a class=" overflow-hidden lg: bg-lime-400 btn mr-5 rounded-full font-bold ">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white rounded-full -rotate-45 w-5 h-5 mx-auto "></i></a>
+              <a class="hidden md:block lg: bg-lime-400 btn mr-5 mx-auto rounded-full py-3 font-bold ">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white rounded-full -rotate-45 w-5 h-5  "></i></a>
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <i class="fa-solid fa-bars "></i>
@@ -118,13 +118,18 @@
             
             
             <div class="w-full lg:w-1/2">
-               <img  src="assets/Vector.png" alt="">
+               <img class="hidden md:block" src="assets/Vector.png" alt="">
+
+               <div class="text-center lg:text-left">
                
-              <button class="bg-white text-lg w-36 rounded-full mb-5 font-bold"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+              <button class=" text-lg mx-auto  bg-white lg:text-xl w-36 rounded-full mb-5 font-bold"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+            </div>
+              
+            
           
         
-              <h1 class="text-4xl font-bold text-gray-900 mb-4">We design thoughtful, liveable spaces</h1>
-              <p class="text-gray-600 mb-8">Experience top-quality services with unmatched reliability. Elevate your business with our innovative solutions and expert support today.</p>
+              <h1 class="lg:text-4xl font-bold text-gray-900 mb-4 text-center">We design thoughtful, liveable spaces</h1>
+              <p class=" text-gray-600 mb-8">Experience top-quality services with unmatched reliability. Elevate your business with our innovative solutions and expert support today.</p>
         
                 <div class="space-y-6">
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
@@ -217,17 +222,19 @@
 
 
             <div class="grid grid-cols-1 lg:grid-cols-12 ">
-              <div class="col-span-1 lg:col-span-8 shadow-2xl rounded-lg">
-                <div class="flex gap-5">
+              <div class="lg:col-span-8 shadow-2xl rounded-lg">
+                <div class="flex flex-col  lg:flex-row gap-5">
                   <div>
-                  <img class="pt-6 pl-5 " src="assets/img1.png" alt="">
+                  <img class="pt-6 pl-5 w-[300px] h-[190px] mx-auto   lg:w-[250px] lg:h-[180px]" src="assets/img1.png" alt="">
 
                   </div>
 
                   <div class="grid-cols-1  ">
-                    <h2 class="text-black text-xl font-bold mb-3 pt-5">Commercial</h2>
-                    <p class="w-[380px] mb-3">Transform your living space with our expert house design services. From modern to classic, we craft homes that reflect your style, maximizing comfort and functionality. Your dream home awaits.</p>
-                    <a class="text-black text-xl font-bold"href="">View Details <i class="fa-solid fa-arrow-right bg-arrow rounded-full -rotate-45 w-8 h-8 px-2 py-2 mx-1"></i></a>
+                    <h2 class="w-[260px] pl-5 mx-auto lg:text-black text-xl font-bold mb-3  pt-5">Commercial</h2>
+                    <p class="w-[260px] pl-5 mx-auto lg:w-[380px] mb-3">Transform your living space with our expert house design services. From modern to classic, we craft homes that reflect your style, maximizing comfort and functionality. Your dream home awaits.</p>
+                    
+                    <a class=" mx-auto lg:w-[260px] pl-5 lgtext-black text-xl font-bold "href="">View Details <i class="fa-solid fa-arrow-right bg-arrow rounded-full -rotate-45 w-8 h-8 px-2 py-2 mx-1"></i></a>
+                  
                    
 
                   </div>
@@ -236,27 +243,27 @@
 
                 </div>
               </div>
-                <div class="col-span-4 shadow-2xl  w-[360px] h-[223px] mx-auto mb-2">
-                  <img class="mx-auto pt-5 " src="assets/img2.png" alt="">
+                <div class="col-span-4 shadow-2xl w-[250px] h-[180px] mx-auto mb-2">
+                  <img class="mx-auto pt-5  w-[300px] 'h-[190px]'mx-auto  lg:w-[250px] h-[180px]" src="assets/img2.png" alt="">
                 </div>
             
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 ">
               <div class="col-span-3 rounded-lg shadow-2xl">
-                <img class="w-[220px] h-[200px] mt-5"src="assets/img3.png" alt="">
+                <img class="mt-5 w-[300px] 'h-[190px]' mx-auto lg:w-[250px] h-[180px]"src="assets/img3.png" alt="">
               </div>
 
-              <div class="col-span-6 shadow-xl rounded-lg -mx-8 pt-7 ">
-                <div class="flex gap-5">
+              <div class="lg:col-span-6 shadow-2xl rounded-lg">
+                <div class="flex flex-col  lg:flex-row gap-5">
                   <div>
-                  <img class=" w-[223px] h-[190px] pt-5 pl-5 " src="assets/img4.png" alt="">
+                  <img class="pt-6 pl-5 w-[300px] h-[190px] mx-auto   lg:w-[250px] lg:h-[180px]" src="assets/img4.png" alt="">
 
                   </div>
 
                   <div>
-                    <h2 class="text-black text-xl font-bold mb-3 pt-5">Commercial</h2>
-                    <p class="w-[380px] mb-3">Transform your living space with our expert house design services. From modern to classic, we craft homes that reflect your style, maximizing comfort and functionality. Your dream home awaits.</p>
+                    <h2 class=" mx-auto lg:text-black text-xl font-bold mb-3 pt-5">Commercial</h2>
+                    <p class="mx-auto lg:w-[380px] mb-3">Transform your living space with our expert house design services. From modern to classic, we craft homes that reflect your style, maximizing comfort and functionality. Your dream home awaits.</p>
                     <a class="text-black text-xl font-bold"href="">View Details <i class="fa-solid fa-arrow-right bg-arrow rounded-full -rotate-45 w-8 h-8 px-2 py-2 mx-1"></i></a>
                    
 
@@ -272,84 +279,53 @@
               
 
               <div class="col-span-3 shadow-sm rounded-lg">
-                <img class="w-[235px] h-[200px] pl-12 pt-5" src="assets/img5.png" alt="">
+                <img class="w-[300px] 'h-[190px]'mx-auto lg:w-[235px] h-[200px] pl-12 pt-5" src="assets/img5.png" alt="">
               </div>
 
-              <!-- <div class="grid grid-cols-1 lg:grid-cols-12 ">
+               <div class="grid grid-cols-1 lg:grid-cols-12 ">
                 <img class="mt-20" src="assets/article1.png" alt="">
-              </div> -->
+              </div> 
 
             </div>
 
                 
-                <!-- <div class="bg-cover bg-center  lg:w-full h-[800px] mt-10 shadow-lg " style="background-image: url(assets/bg.jpg) ">
-                  <div class="">
-                    <div class="container mx-auto px-10 h-40 pt-16 max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-
-                      <h3 class=" lg:w-56 mx-auto bg-color h-10 pt-2 px-5 pl-3 rounded-2xl font-semibold mb-5 text-center"><i class="fa-solid fa-arrow-right px-1"></i>Let’s Connect</h3>
-                      <h1 class="text-3xl font-bold text-center">Let’s Discuss Next Project</h1>
-                      <p class="w-3/4 text-center mx-auto mt-6 mb-auto lg:mb-48 ">Let’s Discuss Your Home Design Project: Whether you envision modern sophistication or rustic charm, let's collaborate to create a space that perfectly reflects your style and needs. Let's get started.</p><
-
-                  </div> -->
-<!-- 
-                  <div class="w-[300px] h-[400px] lg:w-[920px] mx-auto p-6 bg-white shadow-lg rounded-lg mt-28 pb-20">
+                
+          <div class="bg-cover bg-center mt-20 bg-no-repeat p-8 md:p-16" style="background-image: url('assets/bg.jpg');">
+            <div class="max-w-4xl md:p-12 text-center mx-auto">
+            
+              <a class="bg-color rounded-full font-bold text-lg mb-4  " href=""><i class="fa-solid fa-arrow-right"></i>Let’s Connect</a>
                     
-                    <form class="space-y-10">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                           
-                            <input type="text" placeholder="First Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-10">
-                            
-                          
-                            <input type="text" placeholder="Last Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            
-                            
-                            <input type="text" placeholder="Phone Number*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            
-                            
-                            <input type="email" placeholder="Email Number*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                
-                        
-                        <textarea placeholder="Write your message here" class="w-full h-40 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                
-                        
-                        <button type="submit" class="w-full py-4 bg-lime-500 text-black text-xl font-bold rounded-full shadow-md">
-                            Send Mail<i class="fa-solid fa-arrow-right bg-black text-white rounded-full min-w-5 ml-1 -rotate-45 px-2 py-2"></i></button>
-                    </form>
-                </div> -->
-                <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-                  <!-- Header -->
-                  <div class="text-center">
-                    <a href="#" class="inline-block px-4 py-2 mb-4 bg-green-100 text-green-600 font-semibold rounded-full hover:bg-green-200">
-                      Let's Connect
-                    </a>
+                     
                     <h1 class="text-2xl font-bold">Let's Discuss Next Project</h1>
-                    <p class="mt-2 text-gray-600">
-                      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-                    </p>
+                    <p class="mt-2 text-gray-600 text-center"> Whether you're envisioning a modern retreat or a timeless classic, we're here to bring your dream home to life with exceptional design and expert craftsmanship. Let's create something extraordinary together. </p>
                   </div>
                   
-                  <!-- Form -->
-                  <form class="mt-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <input type="text" placeholder="First Name*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
-                      <input type="text" placeholder="Last Name*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
-                      <input type="text" placeholder="Phone Number*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
-                      <input type="email" placeholder="Email*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
+                  
+                   <form class="mt-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                      
+                      <input type="text" placeholder="First Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-50 mb-10">
+
+                      <input type="text" placeholder="Last Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-50 mb-10">
+
+                      <input type="text" placeholder="Phone Number*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-50 mb-10">
+
+                      <input type="text" placeholder="Email Number*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-50 mb-10">
                     </div>
-                    <div class="mt-4">
-                      <textarea placeholder="Write your message here" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 h-32"></textarea>
+                    <div class="mt-2">
+                      <textarea placeholder="Write your message here" class="p-3 border rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-gray-50  h-32"></textarea>
+
+                      <button type="submit" class="w-full py-4 bg-arrow text-black text-xl font-bold rounded-full shadow-md">
+                        Send Mail<i class="fa-solid fa-arrow-right bg-black text-white rounded-full min-w-5 ml-1 -rotate-45 px-2 py-2"></i></button>
                     </div>
                   </form>
                 </div>
               
           </div>
-        </div>
-      </div>
-
+        
 
       <!-- unique section start here -->
-       <div class="max-w-screen-xl mx-auto px-auto px-16 lg:px-20 pt-10 mb-10">
+       <div class="max-w-screen-xl mx-auto px-auto px-16 lg:px-20 pt-10 mt-96 lg:mt-20">
         <div class="">
         <h3 class="text-lg lg:text-2xl font-bold text-center">Unique Section</h3>
         <h1 class="text-lg lg:text-3xl font-bold text-center mt-5">What Our Cilent Say</h1>
