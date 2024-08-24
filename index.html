@@ -30,6 +30,8 @@
                 arrow:'rgb(171, 239, 95)',
                 black:'rgb(28, 28, 28)',
                 footerText:'rgb(115, 115, 115)',
+                bannerBtn: 'rgba(171, 239, 95, 0.5)',
+               
 
                 
               }
@@ -50,20 +52,28 @@
     <header class="max-w-screen-xl mx-auto px-auto px-16 lg:px-20 pt-6">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
+            
+              <button class="bg-lime-400 rounded-full w-8 h-8 -rotate-45"><i class="fa-solid fa-arrow-right"></i></button>
+              <h1 class="text-lg lg:text-3xl font-bold px-2">Rinterio</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a><span class="text-black font-semibold">Home</span></a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                
+                <a class="text-md overflow-hidden lg:text-lg bg-white" href=""><i class="fa-solid fa-magnifying-glass bg-white-50  ml-5 pl-5"></i></a>
+                <a class="text-md overflow-hidden lg:text-lg bg-white"" href=""><i class="fa-solid fa-cart-shopping bg-slate-50"></i></a>
+               
+              <a class=" overflow-hidden lg: bg-lime-400 btn mr-5 rounded-full font-bold ">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white rounded-full -rotate-45 w-5 h-5 mx-auto "></i></a>
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+                  <i class="fa-solid fa-bars "></i>
                 </div>
                 <ul
                   tabindex="0"
@@ -76,22 +86,6 @@
                  
                 </ul>
               </div>
-              <button class="bg-lime-400 rounded-full w-8 h-8 -rotate-45"><i class="fa-solid fa-arrow-right"></i></button>
-              <h1 class="text-3xl font-bold px-2">Rinterio</h1>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a><span class="text-black font-semibold">Home</span></a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Portfolio</a></li>
-                  <li><a>Blogs</a></li>
-                  <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <button class="btn text-xl gap-3"><i class="fa-solid fa-cart-shopping"></i></i></i></i></button>
-                <button class="btn text-xl "><i class="fa-solid fa-magnifying-glass"></i></button>
-              <a class="bg-lime-400 btn">Book Consult<button class=" bg-black text-white rounded-full -rotate-45 w-8 h-8"><i class="fa-solid fa-arrow-right"></i></button></a>
               
             </div>
           </div>
@@ -104,12 +98,15 @@
         <div>
             <img class="mx-auto" src="assets/banner.png" alt="">
         </div>
-         <div class="relative mx-auto mb-40">
-            <h1 class="text-black font-bold text-5xl text-center pt-12 mb-7">A barn house of this design has a <br> striking appearance</h1>
-            <p class="text-gray-500 text-center mx-auto w-3/4 mb-5">A barn house with a modern design features clean lines, large windows, and a steep gabled roof, blending rustic charm with contemporary elegance. Its striking appearance is enhanced by the use of natural wood and metal accents.</p>
+         <div class=" mx-auto mb-40">
+            <h1 class="text-black font-bold text-2xl md:text-3xl lg:text-5xl text-center pt-12 mb-7">A barn house of this design has a <br> striking appearance</h1>
+            <p class="text-gray-500 text-center  mx-auto max-w-md md:w-2/4 lg:w-3/4 mb-10">A barn house with a modern design features clean lines, large windows, and a steep gabled roof, blending rustic charm with contemporary elegance. Its striking appearance is enhanced by the use of natural wood and metal accents.</p>
 
-            <a class="bg-lime-400 tex-center btn absolute left-96 mx-20 rounded-full px-auto mb-10 ">View Details<button class=" bg-lime-500 text-black rounded-full -rotate-45 w-8 h-8 "><i class="fa-solid fa-arrow-right"></i></button></a>
-
+            
+             <div class="flex justify-center items-center mt-5">
+              <button class="bg-bannerBtn text-black font-bold py-2 px-4 rounded-full flex items-center">View Details <i class="fa-solid fa-arrow-right text-black bg-arrow px-2 w-8 h-8 -rotate-45 rounded-full py-2 pb-2 mx-auto "></i>
+              </button>
+          </div>
         </div>
 
          <!-- banner-section End here -->
@@ -121,8 +118,10 @@
             
             
             <div class="w-full lg:w-1/2">
-               <img src="assets/Vector.png" alt="">
+               <img  src="assets/Vector.png" alt="">
+               
               <button class="bg-white text-lg w-36 rounded-full mb-5 font-bold"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+          
         
               <h1 class="text-4xl font-bold text-gray-900 mb-4">We design thoughtful, liveable spaces</h1>
               <p class="text-gray-600 mb-8">Experience top-quality services with unmatched reliability. Elevate your business with our innovative solutions and expert support today.</p>
@@ -176,12 +175,12 @@
 
          
           <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div class="bg-concept lg:bg-concept rounded-xl">
-              <img class="lg:pt-5 px-7 md:px-5"src="assets/concept.png" alt="">
+            <div class="bg-concept lg:bg-concept rounded-xl px-2">
+              <img class=" lg:pt-5 px-7 md:px-5"src="assets/concept.png" alt="">
               <h3 class="text-black text-xl font-bold lg:pt-8 px-7 md:px-5">Concept</h3>
               <p class="lg:pt-2 pb-5 px-7 md:px-5">Our concept blends modern design with timeless elements, creating spaces that are both aesthetically pleasing and highly functional.</p>
             </div>
-            <div class="bg-design rounded-xl">
+            <div class="bg-design rounded-xl mt-3">
               <img class="lg:pt-5 px-7 md:px-5" src="assets/design-process.png" alt="">
               <h3 class="text-black text-xl font-bold lg:pt-8 px-7 md:px-5">Design Process</h3>
               <p class="lg:pt-2 pb-5 px-7 md:px-5">Our design process integrates your ideas with expert planning, transforming concepts into innovative, functional, and visually stunning spaces.</p>
@@ -218,14 +217,14 @@
 
 
             <div class="grid grid-cols-1 lg:grid-cols-12 ">
-              <div class="col-span-8 shadow-2xl rounded-lg">
+              <div class="col-span-1 lg:col-span-8 shadow-2xl rounded-lg">
                 <div class="flex gap-5">
                   <div>
-                  <img class="pt-6 pl-5" src="assets/img1.png" alt="">
+                  <img class="pt-6 pl-5 " src="assets/img1.png" alt="">
 
                   </div>
 
-                  <div>
+                  <div class="grid-cols-1  ">
                     <h2 class="text-black text-xl font-bold mb-3 pt-5">Commercial</h2>
                     <p class="w-[380px] mb-3">Transform your living space with our expert house design services. From modern to classic, we craft homes that reflect your style, maximizing comfort and functionality. Your dream home awaits.</p>
                     <a class="text-black text-xl font-bold"href="">View Details <i class="fa-solid fa-arrow-right bg-arrow rounded-full -rotate-45 w-8 h-8 px-2 py-2 mx-1"></i></a>
@@ -262,49 +261,43 @@
                    
 
                   </div>
+
+                  
                  
                   
 
                 </div>
               </div>
 
+              
+
               <div class="col-span-3 shadow-sm rounded-lg">
                 <img class="w-[235px] h-[200px] pl-12 pt-5" src="assets/img5.png" alt="">
               </div>
 
+              <!-- <div class="grid grid-cols-1 lg:grid-cols-12 ">
+                <img class="mt-20" src="assets/article1.png" alt="">
+              </div> -->
+
             </div>
 
-
-            
-
-            
-
-
-             
-
-         
-
-            
-
-
-            
                 
-                <div class="bg-cover bg-center w-full h-[800px] mt-10 shadow-lg" style="background-image: url(assets/bg.jpg)">
+                <!-- <div class="bg-cover bg-center  lg:w-full h-[800px] mt-10 shadow-lg " style="background-image: url(assets/bg.jpg) ">
                   <div class="">
-                    <div class="container mx-auto px-10 h-40 pt-16">
+                    <div class="container mx-auto px-10 h-40 pt-16 max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
 
-                      <h3 class="w-56 mx-auto bg-color h-10 pt-2 px-5 pl-3 rounded-2xl font-semibold mb-5 text-center"><i class="fa-solid fa-arrow-right px-1"></i>Let’s Connect</h3>
+                      <h3 class=" lg:w-56 mx-auto bg-color h-10 pt-2 px-5 pl-3 rounded-2xl font-semibold mb-5 text-center"><i class="fa-solid fa-arrow-right px-1"></i>Let’s Connect</h3>
                       <h1 class="text-3xl font-bold text-center">Let’s Discuss Next Project</h1>
-                      <p class="w-3/4 text-center mx-auto mt-6 mb-48">Let’s Discuss Your Home Design Project: Whether you envision modern sophistication or rustic charm, let's collaborate to create a space that perfectly reflects your style and needs. Let's get started.</p>
+                      <p class="w-3/4 text-center mx-auto mt-6 mb-auto lg:mb-48 ">Let’s Discuss Your Home Design Project: Whether you envision modern sophistication or rustic charm, let's collaborate to create a space that perfectly reflects your style and needs. Let's get started.</p><
 
-                  </div>
-
-                  <div class=" w-[920px] mx-auto p-6 bg-white shadow-lg rounded-lg mt-28">
+                  </div> -->
+<!-- 
+                  <div class="w-[300px] h-[400px] lg:w-[920px] mx-auto p-6 bg-white shadow-lg rounded-lg mt-28 pb-20">
                     
                     <form class="space-y-10">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                            
-                            <input type="text" placeholder="First Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="text" placeholder="First Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-10">
                             
                           
                             <input type="text" placeholder="Last Name*" class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -323,11 +316,80 @@
                         <button type="submit" class="w-full py-4 bg-lime-500 text-black text-xl font-bold rounded-full shadow-md">
                             Send Mail<i class="fa-solid fa-arrow-right bg-black text-white rounded-full min-w-5 ml-1 -rotate-45 px-2 py-2"></i></button>
                     </form>
+                </div> -->
+                <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+                  <!-- Header -->
+                  <div class="text-center">
+                    <a href="#" class="inline-block px-4 py-2 mb-4 bg-green-100 text-green-600 font-semibold rounded-full hover:bg-green-200">
+                      Let's Connect
+                    </a>
+                    <h1 class="text-2xl font-bold">Let's Discuss Next Project</h1>
+                    <p class="mt-2 text-gray-600">
+                      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                  </div>
+                  
+                  <!-- Form -->
+                  <form class="mt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input type="text" placeholder="First Name*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
+                      <input type="text" placeholder="Last Name*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
+                      <input type="text" placeholder="Phone Number*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
+                      <input type="email" placeholder="Email*" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div class="mt-4">
+                      <textarea placeholder="Write your message here" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 h-32"></textarea>
+                    </div>
+                  </form>
                 </div>
               
           </div>
         </div>
       </div>
+
+
+      <!-- unique section start here -->
+       <div class="max-w-screen-xl mx-auto px-auto px-16 lg:px-20 pt-10 mb-10">
+        <div class="">
+        <h3 class="text-lg lg:text-2xl font-bold text-center">Unique Section</h3>
+        <h1 class="text-lg lg:text-3xl font-bold text-center mt-5">What Our Cilent Say</h1>
+        <p class="text-center w-3/4 mx-auto mt-5">Exceptional designs, personalized service, and dream homes realized hear directly from those who trusted us with their vision.</p>
+      </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
+          <div>
+            <img  class="w-[300px] h-[230px] rounded-lg mb-2" src="assets/or.jpg" alt="">
+            <h3 class="text-xl text-center lg:text-2xl font-bold mb-3">Orin Akther</h3>
+            <p>Our dream home became a reality thanks to this design team! From rustic barn house elements to modern chic interiors, every detail was perfectly executed. We couldn’t be happier.</p>
+            <a class="text-lg lg:text-xl font-bold" href="">Rating: <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> </i></a>
+
+
+          </div>
+
+          <div>
+            <img  class="w-[300px] h-[230px] rounded-lg mb-2" src="assets/mim.HEIC" alt="">
+            <h3 class="text-xl text-center lg:text-2xl font-bold mb-3">Mim Akther</h3>
+            <p>This design firm transformed my vision into a stunning home that perfectly blends comfort and style. The attention to detail and personal touch made the entire experience enjoyable.</p>
+            <a class="text-lg lg:text-xl font-bold" href="">Rating: <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> </i></a>
+
+
+          </div>
+
+          <div>
+            <img class="w-[300px] h-[230px] rounded-lg mb-2" src="assets/orin.jpg" alt="">
+            <h3 class="text-xl text-center lg:text-2xl font-bold mb-3">Afia Alom</h3>
+            <p>"We were impressed by their ability to blend modern architecture with the natural beauty of our location. Every window and detail was thoughtfully planned. Truly a work of art.</p>
+            <a class="text-lg lg:text-xl font-bold" href="">Rating: <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> <i class="fa-regular fa-star text-amber-200 bg-yellow-50"></i> </i></a>
+
+
+          </div>
+
+
+
+        </div>
+
+       </div>
+
+       <!-- unique section End  here -->
 
     </main> 
 
